@@ -8,7 +8,32 @@
     <title>Lista de Transacoes</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 </head>
-<body>
+<body class="container">
+    <form action="<c:url value="/transacoes"/>" method="POST">
+        <div class="form-group">
+            <label for="ticker">Ticker</label>
+            <input id="ticker" name="ticker" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="data">data</label>
+            <input id="data" name="data" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="preco">Preço</label>
+            <input id="preco" name="preco" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="quantidade">Quantidade</label>
+            <input id="quantidade" name="quantidade" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="tipo">Tipo</label>
+            <input id="tipo" name="tipo" class="form-control">
+        </div>
+
+        <input type="submit" value="Gravar" class="mt-2 btn-primary">
+    </form>
+
     <h1 class="text-center">Lista de Transacoes</h1>
     <table class="table table-hover table-striped table-bordered">
         <thead>
