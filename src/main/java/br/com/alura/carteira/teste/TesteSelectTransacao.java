@@ -1,12 +1,11 @@
 package br.com.alura.carteira.teste;
 
 import br.com.alura.carteira.dao.TransacaoDao;
-import br.com.alura.carteira.modelo.TipoTransacao;
 import br.com.alura.carteira.modelo.Transacao;
 
-import java.math.BigDecimal;
-import java.sql.*;
-import java.time.LocalDate;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 import java.util.List;
 
 public class TesteSelectTransacao {
