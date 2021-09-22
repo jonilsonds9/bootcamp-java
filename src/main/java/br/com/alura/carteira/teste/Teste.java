@@ -24,8 +24,8 @@ public class Teste {
         System.out.println(t.getData().format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
         System.out.println(t.getTipo());
 
-        Transacao t2 = new Transacao("XPTO12", new BigDecimal("12.7"),
-                200, LocalDate.now(), TipoTransacao.VENDA);
+        Transacao t2 = new Transacao("XPTO12", LocalDate.now(), new BigDecimal("12.7"),
+                200, TipoTransacao.VENDA);
         System.out.println(t2);
     }
 

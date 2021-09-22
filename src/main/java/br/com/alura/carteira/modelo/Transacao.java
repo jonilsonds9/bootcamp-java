@@ -14,7 +14,7 @@ public class Transacao {
     public Transacao() {
     }
 
-    public Transacao(String ticker, BigDecimal preco, int quantidade, LocalDate data, TipoTransacao tipo) {
+    public Transacao(String ticker, LocalDate data, BigDecimal preco, int quantidade, TipoTransacao tipo) {
         this.ticker = ticker;
         this.preco = preco;
         this.quantidade = quantidade;
